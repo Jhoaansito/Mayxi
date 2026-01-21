@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Cerámicas MAYXI</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- FUENTES -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+<header class="banner">
+
+    <!-- TEXTO DIFUMINADO DE FONDO -->
+    <div class="marca-fondo">Artesanias en barro</div>
+
+    <div class="contenido-banner">
+
+        <!-- LOGO CIRCULAR -->
+        <div class="logo-circulo">
+            <img src="https://i.imgur.com/3aiV3Sw.jpeg" alt="Logo Cerámicas MAYXI">
+        </div>
+
+        <h1 class="titulo">Cerámicas MAYXI</h1>
+
+        <p class="subtitulo">
+            Elaboramos cerámicas artesanales hechas a mano, cuidando cada pieza desde el inicio hasta el último detalle.
+            Creamos figuras decorativas con identidad propia, pensadas para acompañar distintos espacios y estilos.
+        </p>
+
+        <a href="#catalogo" class="btn-principal">Ver catálogo</a>
+    </div>
+</header>
+
+<!-- FILTROS -->
+<section class="filtros">
+    <select id="filtroTipo">
+        <option value="todos">Todos los tipos</option>
+        <option value="decorativa">Decorativa</option>
+        <option value="religiosa">Religiosa</option>
+    </select>
+
+    <select id="filtroPrecio">
+        <option value="todos">Todos los precios</option>
+        <option value="bajo">Menos de $40.000</option>
+        <option value="medio">$40.000 - $60.000</option>
+        <option value="alto">Más de $60.000</option>
+    </select>
+</section>
+
+<!-- CATÁLOGO -->
+<section class="catalogo" id="catalogo">
+    <div class="producto" data-tipo="decorativa" data-precio="medio">
+        <img src="https://via.placeholder.com/300x300" alt="Figura">
+        <h3>Figura artesanal</h3>
+        <p>$45.000</p>
+    </div>
+
+    <div class="producto" data-tipo="religiosa" data-precio="alto">
+        <img src="https://via.placeholder.com/300x300" alt="Figura">
+        <h3>Figura religiosa</h3>
+        <p>$
