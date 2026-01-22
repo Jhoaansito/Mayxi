@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth; /* 🌊 SCROLL SUAVE */
+}
+
 body {
     font-family: 'Inter', sans-serif;
     background: #f7f2ed;
@@ -57,12 +61,20 @@ body {
     margin: 20px auto;
 }
 
+/* BOTÓN CATÁLOGO */
 .btn-principal {
     background: #c28e5c;
     color: #fff;
     padding: 14px 34px;
     border-radius: 30px;
     text-decoration: none;
+    display: inline-block;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.btn-principal:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.35);
 }
 
 /* FILTROS */
@@ -73,7 +85,7 @@ body {
     padding: 30px;
 }
 
-/* CATALOGO */
+/* CATÁLOGO */
 .catalogo {
     padding: 40px;
     display: grid;
@@ -86,11 +98,12 @@ body {
     padding: 15px;
     border-radius: 14px;
     box-shadow: 0 10px 25px rgba(0,0,0,0.12);
-    transition: transform 0.3s ease;
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
 }
 
 .producto:hover {
-    transform: translateY(-8px);
+    transform: translateY(-10px);
+    box-shadow: 0 18px 35px rgba(0,0,0,0.18);
 }
 
 .producto img {
@@ -120,6 +133,20 @@ body {
     text-decoration: none;
     font-weight: bold;
     box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    animation: flotar 2.8s ease-in-out infinite;
+    transition: transform 0.3s ease;
 }
+
+.whatsapp:hover {
+    transform: scale(1.1);
+}
+
+/* ANIMACIÓN WHATSAPP */
+@keyframes flotar {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-6px); }
+    100% { transform: translateY(0); }
+}
+
 
 
