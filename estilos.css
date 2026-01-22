@@ -12,44 +12,31 @@ body {
 
 /* BANNER */
 .banner {
-    position: relative;
     height: 95vh;
-    background: linear-gradient(to bottom, #7a4f34, #3e2a1f);
+    background: linear-gradient(180deg, #8b5a3c, #3e2a1f);
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     text-align: center;
-    overflow: hidden;
+    position: relative;
 }
 
-/* TEXTO GRANDE DE FONDO */
 .marca-fondo {
     position: absolute;
     font-family: 'Playfair Display', serif;
-    font-size: clamp(60px, 11vw, 150px);
-    color: rgba(255,255,255,0.04);
+    font-size: clamp(60px, 12vw, 150px);
+    color: rgba(255,255,255,0.05);
     letter-spacing: 6px;
-    white-space: nowrap;
-    z-index: 1;
 }
 
-/* CONTENIDO */
-.contenido-banner {
-    position: relative;
-    z-index: 2;
-    max-width: 900px;
-    padding: 20px;
-}
-
-/* LOGO CIRCULAR */
 .logo-circulo {
     width: 200px;
     height: 200px;
     border-radius: 50%;
+    background: radial-gradient(circle, #e7d3c1, #c2a089);
     overflow: hidden;
-    background: #f3e6d8;
     margin: 0 auto 25px;
-    box-shadow: 0 12px 30px rgba(0,0,0,0.35);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.4);
 }
 
 .logo-circulo img {
@@ -58,34 +45,24 @@ body {
     object-fit: cover;
 }
 
-/* TÍTULO */
 .titulo {
     font-family: 'Playfair Display', serif;
     font-size: 48px;
     color: #fff;
-    margin-bottom: 15px;
 }
 
-/* SUBTÍTULO */
 .subtitulo {
     color: #e8dcd1;
-    font-size: 16px;
-    line-height: 1.6;
-    margin-bottom: 30px;
+    max-width: 700px;
+    margin: 20px auto;
 }
 
-/* BOTÓN */
 .btn-principal {
     background: #c28e5c;
     color: #fff;
-    padding: 14px 32px;
+    padding: 14px 34px;
     border-radius: 30px;
     text-decoration: none;
-    transition: 0.3s;
-}
-
-.btn-principal:hover {
-    background: #a87445;
 }
 
 /* FILTROS */
@@ -96,35 +73,39 @@ body {
     padding: 30px;
 }
 
-.filtros select {
-    padding: 10px;
-    border-radius: 6px;
-    border: 1px solid #ccc;
-}
-
-/* CATÁLOGO */
+/* CATALOGO */
 .catalogo {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 25px;
     padding: 40px;
+    display: grid;
+    gap: 25px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
 .producto {
     background: #fff;
     padding: 15px;
-    border-radius: 12px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
-    transition: transform 0.3s;
+    border-radius: 14px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+    transition: transform 0.3s ease;
 }
 
 .producto:hover {
-    transform: translateY(-5px);
+    transform: translateY(-8px);
 }
 
 .producto img {
     width: 100%;
     border-radius: 10px;
+}
+
+.precio {
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+.specs {
+    font-size: 13px;
+    color: #666;
 }
 
 /* WHATSAPP */
@@ -134,9 +115,11 @@ body {
     right: 20px;
     background: #25d366;
     color: #fff;
-    padding: 14px 20px;
+    padding: 14px 22px;
     border-radius: 30px;
     text-decoration: none;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
     font-weight: bold;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
 }
+
+
