@@ -1,18 +1,18 @@
-const filtroTipo = document.getElementById("filtroTipo");
+const filtroModelo = document.getElementById("filtroModelo");
 const filtroPrecio = document.getElementById("filtroPrecio");
 const productos = document.querySelectorAll(".producto");
 
 function filtrar() {
     productos.forEach(producto => {
-        const tipo = producto.dataset.tipo;
+        const modelo = producto.dataset.modelo;
         const precio = producto.dataset.precio;
 
-        const tipoValido = filtroTipo.value === "todos" || filtroTipo.value === tipo;
-        const precioValido = filtroPrecio.value === "todos" || filtroPrecio.value === precio;
+        const modeloOk = filtroModelo.value === "todos" || filtroModelo.value === modelo;
+        const precioOk = filtroPrecio.value === "todos" || filtroPrecio.value === precio;
 
-        producto.style.display = (tipoValido && precioValido) ? "block" : "none";
+        producto.style.display = (modeloOk && precioOk) ? "block" : "none";
     });
 }
 
-filtroTipo.addEventListener("change", filtrar);
+filtroModelo.addEventListener("change", filtrar);
 filtroPrecio.addEventListener("change", filtrar);
