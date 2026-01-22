@@ -13,22 +13,17 @@
 <body>
 
 <header class="banner">
-
-    <!-- TEXTO DIFUMINADO DE FONDO -->
-    <div class="marca-fondo">Artesanias en barro</div>
+    <div class="marca-fondo">Arte en cerámica</div>
 
     <div class="contenido-banner">
-
-        <!-- LOGO CIRCULAR -->
         <div class="logo-circulo">
-            <img src="https://i.imgur.com/3aiV3Sw.jpeg" alt="Logo Cerámicas MAYXI">
+            <img src="https://i.imgur.com/3aiV3Sw.jpeg" alt="Cerámicas MAYXI">
         </div>
 
         <h1 class="titulo">Cerámicas MAYXI</h1>
 
         <p class="subtitulo">
-            Elaboramos cerámicas artesanales hechas a mano, cuidando cada pieza desde el inicio hasta el último detalle.
-            Creamos figuras decorativas con identidad propia, pensadas para acompañar distintos espacios y estilos.
+            Piezas artesanales hechas a mano, con acabados únicos y dedicación en cada detalle.
         </p>
 
         <a href="#catalogo" class="btn-principal">Ver catálogo</a>
@@ -37,29 +32,103 @@
 
 <!-- FILTROS -->
 <section class="filtros">
-    <select id="filtroTipo">
-        <option value="todos">Todos los tipos</option>
-        <option value="decorativa">Decorativa</option>
-        <option value="religiosa">Religiosa</option>
+    <select id="filtroModelo">
+        <option value="todos">Todos los modelos</option>
+        <option value="animados">Animados</option>
+        <option value="animales">Animales</option>
+        <option value="jarrones">Jarrones</option>
+        <option value="ahorros">Ahorros</option>
     </select>
 
     <select id="filtroPrecio">
         <option value="todos">Todos los precios</option>
-        <option value="bajo">Menos de $40.000</option>
-        <option value="medio">$40.000 - $60.000</option>
-        <option value="alto">Más de $60.000</option>
+        <option value="20">Desde $20.000</option>
+        <option value="40">Desde $40.000</option>
+        <option value="60">Desde $60.000</option>
     </select>
 </section>
 
 <!-- CATÁLOGO -->
 <section class="catalogo" id="catalogo">
-    <div class="producto" data-tipo="decorativa" data-precio="medio">
-        <img src="https://via.placeholder.com/300x300" alt="Figura">
-        <h3>Figura artesanal</h3>
-        <p>$45.000</p>
+
+    <!-- PRODUCTO 1 -->
+    <div class="producto" data-modelo="animados" data-precio="20">
+        <img src="https://via.placeholder.com/300x300">
+        <h3>Nombre del producto</h3>
+        <p class="precio">$20.000</p>
+        <p class="specs">Tamaño: Mediano · Colores: Beige y café</p>
     </div>
 
-    <div class="producto" data-tipo="religiosa" data-precio="alto">
-        <img src="https://via.placeholder.com/300x300" alt="Figura">
-        <h3>Figura religiosa</h3>
-        <p>$
+    <!-- PRODUCTO 2 -->
+    <div class="producto" data-modelo="animales" data-precio="40">
+        <img src="https://via.placeholder.com/300x300">
+        <h3>Nombre del producto</h3>
+        <p class="precio">$40.000</p>
+        <p class="specs">Tamaño: Pequeño · Colores: Terracota</p>
+    </div>
+
+    <!-- PRODUCTO 3 -->
+    <div class="producto" data-modelo="jarrones" data-precio="60">
+        <img src="https://via.placeholder.com/300x300">
+        <h3>Nombre del producto</h3>
+        <p class="precio">$60.000</p>
+        <p class="specs">Tamaño: Grande · Colores: Arena</p>
+    </div>
+
+    <!-- PRODUCTOS 4 AL 10 -->
+    <!-- SOLO CAMBIA IMAGEN Y TEXTO -->
+
+    <div class="producto" data-modelo="ahorros" data-precio="20">
+        <img src="https://via.placeholder.com/300x300">
+        <h3>Nombre del producto</h3>
+        <p class="precio">$25.000</p>
+        <p class="specs">Tamaño: Mediano · Colores: Beige</p>
+    </div>
+
+    <div class="producto" data-modelo="animales" data-precio="40">
+        <img src="https://via.placeholder.com/300x300">
+        <h3>Nombre del producto</h3>
+        <p class="precio">$45.000</p>
+        <p class="specs">Tamaño: Mediano · Colores: Marrón</p>
+    </div>
+
+    <div class="producto" data-modelo="jarrones" data-precio="60">
+        <img src="https://via.placeholder.com/300x300">
+        <h3>Nombre del producto</h3>
+        <p class="precio">$70.000</p>
+        <p class="specs">Tamaño: Grande · Colores: Beige claro</p>
+    </div>
+
+    <div class="producto" data-modelo="animados" data-precio="20">
+        <img src="https://via.placeholder.com/300x300">
+        <h3>Nombre del producto</h3>
+        <p class="precio">$30.000</p>
+        <p class="specs">Tamaño: Pequeño · Colores: Arena</p>
+    </div>
+
+    <div class="producto" data-modelo="ahorros" data-precio="40">
+        <img src="https://via.placeholder.com/300x300">
+        <h3>Nombre del producto</h3>
+        <p class="precio">$40.000</p>
+        <p class="specs">Tamaño: Mediano · Colores: Terracota</p>
+    </div>
+
+    <div class="producto" data-modelo="animales" data-precio="60">
+        <img src="https://via.placeholder.com/300x300">
+        <h3>Nombre del producto</h3>
+        <p class="precio">$65.000</p>
+        <p class="specs">Tamaño: Grande · Colores: Marrón oscuro</p>
+    </div>
+
+</section>
+
+<!-- WHATSAPP (UNO SOLO) -->
+<a class="whatsapp"
+href="https://wa.me/573015340852?text=Hola%20👋%20Vi%20el%20catálogo%20de%20Cerámicas%20MAYXI%20y%20me%20gustaría%20recibir%20más%20información."
+target="_blank">
+WhatsApp
+</a>
+
+<script src="filtros.js"></script>
+</body>
+</html>
