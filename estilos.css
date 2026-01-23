@@ -4,10 +4,6 @@
     box-sizing: border-box;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
 body {
     font-family: 'Inter', sans-serif;
     background: #f7f2ed;
@@ -23,7 +19,6 @@ body {
     align-items: center;
     text-align: center;
     position: relative;
-    overflow: hidden;
 }
 
 .marca-fondo {
@@ -32,12 +27,6 @@ body {
     font-size: clamp(60px, 12vw, 150px);
     color: rgba(255,255,255,0.05);
     letter-spacing: 6px;
-}
-
-.contenido-banner {
-    position: relative;
-    z-index: 2;
-    max-width: 900px;
 }
 
 .logo-circulo {
@@ -64,8 +53,8 @@ body {
 
 .subtitulo {
     color: #e8dcd1;
-    margin: 20px auto;
     max-width: 700px;
+    margin: 20px auto;
 }
 
 .btn-principal {
@@ -74,13 +63,6 @@ body {
     padding: 14px 34px;
     border-radius: 30px;
     text-decoration: none;
-    display: inline-block;
-    transition: transform 0.35s ease, box-shadow 0.35s ease;
-}
-
-.btn-principal:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 12px 28px rgba(0,0,0,0.35);
 }
 
 /* FILTROS */
@@ -89,12 +71,6 @@ body {
     justify-content: center;
     gap: 15px;
     padding: 30px;
-}
-
-.filtros select {
-    padding: 10px;
-    border-radius: 6px;
-    border: 1px solid #ccc;
 }
 
 /* CATALOGO */
@@ -110,12 +86,11 @@ body {
     padding: 15px;
     border-radius: 14px;
     box-shadow: 0 10px 25px rgba(0,0,0,0.12);
-    transition: transform 0.35s ease, box-shadow 0.35s ease;
+    transition: transform 0.3s ease;
 }
 
 .producto:hover {
     transform: translateY(-8px);
-    box-shadow: 0 18px 35px rgba(0,0,0,0.18);
 }
 
 .producto img {
@@ -145,16 +120,5 @@ body {
     text-decoration: none;
     font-weight: bold;
     box-shadow: 0 8px 20px rgba(0,0,0,0.3);
-    animation: flotar 2.8s ease-in-out infinite;
-    transition: transform 0.3s ease;
 }
 
-.whatsapp:hover {
-    transform: scale(1.08);
-}
-
-@keyframes flotar {
-    0% { transform: translateY(0); }
-    50% { transform: translateY(-6px); }
-    100% { transform: translateY(0); }
-}
